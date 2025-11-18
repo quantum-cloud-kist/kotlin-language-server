@@ -26,7 +26,7 @@ val javaVersion = try {
 }
 
 kotlin {
-    jvmToolchain(javaVersion.toInt())
+    jvmToolchain(25)  // Java 25 사용
 }
 
 dependencies {

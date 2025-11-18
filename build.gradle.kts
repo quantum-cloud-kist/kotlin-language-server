@@ -45,7 +45,7 @@ tasks.register<DetektCreateBaselineTask>("createDetektBaseline") {
 }
 
 tasks.withType<Detekt>().configureEach {
-    jvmTarget = JavaVersion.VERSION_11.toString()
+    jvmTarget = JavaVersion.VERSION_22.toString()  // Detekt는 최대 22까지 지원
     exclude("**/build/**")
     reports {
         html.required.set(true)
